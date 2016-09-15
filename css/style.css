@@ -1,0 +1,191 @@
+  body {
+      background: #0c739f url('../img/gradient.png');
+      background-repeat: repeat-x;
+      font-family: Tahoma, sans-serif;
+      }
+
+    .wrapper {
+        width: 1000px;
+        height: 1000px;
+        margin: 38px auto;
+        padding: 0;
+        background: #ffffff;
+        border-bottom: 3px solid #031d28;
+        }
+
+        /*<--------HEADER--------->*/
+
+    .header {
+        display: flex;
+        height: 175px;
+        margin: 0 auto;
+        padding: 0;
+        flex-flow: column wrap;
+        }
+    .logo, .contacts {
+        color: #49ADC0;
+        font-size: 12px;
+        }
+
+    .logo {
+        width: 280px;
+        height: 165px;
+        font-size: 12px;
+        margin: 10px 20px 0;
+        display: flex;
+        position: relative;
+        align-items: center;
+        }
+
+    h1 {
+        display: flex;
+        position: absolute;
+        left: 71px;
+        bottom: -77px;
+        margin: 130px auto;
+        color:#49adc0;
+        }
+
+    .header-right {
+        width: 640px;
+        height: 165px;
+        margin: 10px 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        }
+
+    .contacts {
+        height: 80px;
+        width: 600px;
+        font-size: 12px;
+        color: #49adc0;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        }
+
+    .conteiner {
+        width: 330px;
+        height: 55px;
+        font-size: 10px;
+        text-align: center;
+        color: #49adc0;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: flex-end;
+        }
+
+    .photo {
+      border-top: 1px solid #138aa7;
+      border-bottom: 1px solid #138aa7;
+      }
+      /*<--------MAIN MENU-------------->*/
+
+    .main-menu {
+        position: relative;
+        top: -2px;
+        box-shadow: 0 2px 1px 0 #555555;
+        }
+    .main-menu > ul {
+        height: 31px;
+        display: flex;
+        justify-content: space-around;
+        background: #333333;
+        border-top: 1px solid #cacbcb;
+        border-bottom: 1px solid #000000;
+        }
+    .main-menu > ul > li {
+        padding: 0;
+        position: relative;
+        width: 140px;
+        text-align: center;
+    }
+    .main-menu > ul > li.submenu:hover > ul {
+        display: block;
+        }
+    .main-menu a {
+        padding: 10px;
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-size: 14px;
+        color: #ffffff;
+        }
+
+    .submenu > ul {
+        display: none;
+        position: relative;
+        left: 5px;
+        background: #303030;
+    }
+    .submenu li {
+        width: 145px;
+        }
+    .submenu a::after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 12px;
+        right: -6px;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-top: 8px solid #FFF;
+        }
+    /*<-----------CONTENT------------------->*/
+
+    .content {
+        width: 100%;
+        max-width: 1000px;
+        height: 100%;
+        max-height: 550px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+
+    .info, .news {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        padding: 10px 20px;
+        flex: 0 1 17%;
+        font-size: 14px;
+        color: #424c43;
+        box-shadow: 1px 0px 0px 1px #c7cacf;
+        line-height: 170%;
+        background: #edeef0;
+        }
+
+      .content h4 {
+        margin: 0;
+        padding: 10px 0;
+        font-size: 18px;
+        text-shadow: 1px 1px #abaead;
+        color: #424c43;
+        }
+    .info {
+        border-left: 2px solid #c7cacf;
+        }
+    .news {
+        border-left: 2px solid #c7cacf;
+        }
+    .center {
+        flex: 2 0 50%;
+        }
+
+    /*<--------FOOTER------------>    */
+    footer {
+      margin: 10px auto 15px;
+      text-align: center;
+      color:  #ffffff;
+      font-size: 12px;
+      }
